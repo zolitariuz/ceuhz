@@ -15,6 +15,9 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/messages_es.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>
 
+	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 
 <body>
