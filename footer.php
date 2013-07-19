@@ -90,8 +90,8 @@
 				Centro de estudios universitarios "Horacio zúniga" S.C.<br />
 				Av. Toluca num. 300 Int.3 Villa Cuauhtémoc, otz Estado de México<br />
 				Telefonos (01722) 2-49-62-52 al 54<br />
-				<a href="mailto:ceuhz.campus.universitario@gmail.com">
-					ceuhz.campus.universitario@gmail.com
+				<a href="mailto:ceuhz.campus.universitario@gmail.com,info@universidadceuhz.edu.mx">
+					info@universidadceuhz.edu.mx
 				</a>
 				</p>
 				
