@@ -31,6 +31,4 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 				
 			</div><!-- seccion_single -->
 			
-			<?php get_sidebar(); ?>
-			
 <?php get_footer(); ?>

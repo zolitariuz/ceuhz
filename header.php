@@ -95,7 +95,7 @@
 					<a href="#">Egresados</a>
 					<ul>
 						<li> <a href="<?php echo home_url('/titulacion'); ?>"> Titulación </a> </li>
-						<li> <a href="<?php echo home_url('/bolsa-de-trabajo'); ?>"> Bolsa de Trabajo </a> </li>
+						<li> <a href="<?php echo home_url('/vacantes'); ?>"> Bolsa de Trabajo </a> </li>
 						<li> <a href="<?php echo home_url('/seguimiento-de-egresados'); ?>"> Seguimiento de Egresados </a> </li>
 					</ul>
 				</li>
@@ -136,19 +136,48 @@
 		</div><!-- header_100 -->
 		
 		<div id="wrap_slider">
+
+			<form id="forma_slider" method="post" action="<?php echo home_url('/contacto-recibido'); ?>">
+				<label for="nombre">Nombre</label>
+				<input type="text"
+					class="required"
+					name="nombre"
+				>
+				
+				<label for="email">Email</label>
+				<input type="email"
+					class="required email"
+					name="email"
+				>
+				
+				<label for="mensaje">Mensaje</label>
+				<textarea name="mensaje" class="required">
+				</textarea>
+				
+				<input type="submit" value="enviar">
+			</form><!-- forma_sidebar -->
+
 			<div id="slider"
 				class="cycle-slideshow"
 				data-cycle-speed="800"
 				data-cycle-fx="scrollHorz"
 				data-cycle-next=".next"
 				data-cycle-prev=".prev"
+				data-cycle-log="false"
 			>
 				
-				<img src="<?php bloginfo('template_url'); ?>/images/header_3.jpg" >
-				<!-- <img src="<?php bloginfo('template_url'); ?>/images/header_1.jpg" > -->
-				<img src="<?php bloginfo('template_url'); ?>/images/header_2.jpg" >
-				<img src="<?php bloginfo('template_url'); ?>/images/header_4.jpg" >
-				<img src="<?php bloginfo('template_url'); ?>/images/header_5.jpg" >
+				<?php
+				$args = array(
+					'post_type' => 'slider',
+					'posts_per_page' => 5
+				);
+				query_posts($args);
+				while ( have_posts() ) : the_post();
+					
+					the_post_thumbnail('slider');
+
+				endwhile;
+				?>
 			
 			</div><!-- slider -->
 			
