@@ -225,7 +225,8 @@ body {
   width: 30px;
   height: 30px;
   display: block;
-  z-index: 1000;
+  z-index: 1100;
+  position: relative;
 }
 #wrap_slider #nav_slider a.prev {
   float: left;
