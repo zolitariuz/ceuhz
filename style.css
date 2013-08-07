@@ -358,6 +358,10 @@ body {
   color: #222222;
   line-height: 26px;
 }
+.seccion_single .entrada_single img {
+  width: 100%;
+  height: auto;
+}
 .seccion_single .entrada_single.mapa {
   padding: 0;
 }
@@ -365,6 +369,12 @@ body {
   width: 100%;
   height: 572px;
   margin: 0px;
+}
+.seccion_single .entrada_single .adjunto {
+  color: #77bb0c;
+  font-family: 'Merriweather';
+  font-size: 16px;
+  text-decoration: none;
 }
 #sidebar {
   width: 317px;
@@ -427,6 +437,41 @@ body {
   -o-border-radius: 4px;
   margin-bottom: 10px;
   padding: 5px;
+}
+#contacto_egresados label {
+  width: 30%;
+  height: 20px;
+  margin: 0 0 10px 0;
+  float: left;
+  color: #77bb0c;
+  font-family: 'Merriweather';
+}
+#contacto_egresados input {
+  width: 66%;
+  height: 20px;
+  margin: 0 0 10px 0;
+  float: right;
+}
+#contacto_egresados input[type="submit"] {
+  width: 25%;
+  height: auto;
+  padding: 5px;
+  background: #77bb0c;
+  color: #fff;
+  border: none;
+  float: right;
+}
+#contacto_egresados textarea {
+  width: 66%;
+  height: 60px;
+  margin: 0 0 10px 0;
+  float: right;
+}
+#contacto_egresados select {
+  width: 66%;
+  height: 20px;
+  margin: 0 0 10px 0;
+  float: right;
 }
 #footer_100 {
   width: 100%;

@@ -177,6 +177,7 @@
 					the_post_thumbnail('slider');
 
 				endwhile;
+				wp_reset_query();
 				?>
 			
 			</div><!-- slider -->

@@ -45,6 +45,8 @@
 							<label>Mensaje</label>
 							<textarea name="mensaje" ></textarea>
 							
+							<div class="clear"></div>
+
 							<input type="submit" value="Enviar">
 						
 						</form>

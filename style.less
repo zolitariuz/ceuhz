@@ -154,11 +154,12 @@ html, body{ height: 100%; }
 		h3{ .merri; font-size: 30px; text-align: center; color: @verde; font-weight: normal; }
 		h4{ .merri; font-size: 22px; text-align: left; color: @verde; font-weight: normal; }
 		p{ color: @gris; line-height: 26px; }
-		img{}
+		img{ width: 100%; height: auto; }
 		
 		&.mapa{ padding: 0; 
 			iframe{ width: 100%; height: 572px; margin: 0px;}
 		}
+		.adjunto{ color: @verde; .merri; font-size: 16px; text-decoration: none; }
 	}
 }
 
@@ -173,6 +174,20 @@ html, body{ height: 100%; }
 			textarea{ background: #ededed; color: #a4a4a4; .merri; font-size: 30px; border: none; width: 100%; .sombra; .redondas; margin-bottom: 10px; padding: 5px; }
 		}
 	}
+}
+
+
+#contacto_egresados{
+	label{ width: 30%; height: 20px; margin: 0 0 10px 0; float: left; color: @verde; .merri;
+		.error{}
+	}
+	input{ width: 66%; height: 20px; margin: 0 0 10px 0;  float: right;
+		&[type="text"]{}
+		&[type="submit"]{ width: 25%; height: auto; padding: 5px; background: @verde; color: #fff; border: none; float: right; }
+	}
+	textarea{ width: 66%; height: 60px; margin: 0 0 10px 0; float: right; }
+	select{ width: 66%; height: 20px; margin: 0 0 10px 0; float: right; }
+
 }
 
 //---- FOOTER ----//
